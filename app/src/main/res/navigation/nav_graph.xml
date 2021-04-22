@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.registration.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.registration.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_allContactsFragment"
+            app:destination="@id/allContactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allContactsFragment"
+        android:name="com.example.registration.AllContactsFragment"
+        android:label="fragment_all_contacts"
+        tools:layout="@layout/fragment_all_contacts" >
+        <action
+            android:id="@+id/action_allContactsFragment_to_smsFragment"
+            app:destination="@id/smsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="com.example.registration.SmsFragment"
+        android:label="fragment_sms"
+        tools:layout="@layout/fragment_sms" />
+</navigation>

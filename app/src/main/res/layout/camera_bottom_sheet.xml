@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    style="@style/Dexter.Internal.Theme.Transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="100dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:padding="14sp"
+        android:src="@drawable/ic_camera1"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/camera"
+        app:layout_constraintRight_toRightOf="@id/camera"
+        app:layout_constraintTop_toBottomOf="@id/camera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folder"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/folder"
+        app:layout_constraintRight_toRightOf="@id/folder"
+        app:layout_constraintTop_toBottomOf="@id/folder" />
+
+    <ImageView
+        android:id="@+id/folder"
+        android:layout_width="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:padding="15sp"
+        android:src="@drawable/ic_folder"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
